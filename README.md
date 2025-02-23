@@ -25,11 +25,7 @@ Este projeto está em desenvolvimento ativo. Novas funcionalidades e melhorias s
 
 ## Como Visualizar o Site
 
-Para visualizar o site em seu navegador, siga estas etapas:
-
-1.  Clone este repositório para o seu computador.
-2.  Abra o arquivo `index.html` em seu navegador.
-
+Para visualizar o site em seu navegador, clique aqui https://gabrielrrrosa.github.io/Beatriz_Moraes/ .
 ## Contribuição
 
 Contribuições para este projeto são bem-vindas. Se você encontrar algum problema ou tiver sugestões de melhorias, abra uma issue ou envie um pull request.

@@ -1,8 +1,20 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #3E5367;
+    background-color: #EFF0F0;
     color: #EFF0F0;
 }
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .animate-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 
 .top-bar {
     background-color: #ADB8AA; /* Verde Neutro */
@@ -185,6 +197,8 @@ justify-content: space-between;
 flex-wrap: wrap;
 gap: 20px;
 margin-top: 30px;
+padding: 10px;
+
 }
 .card {
 background: #647465;
@@ -196,6 +210,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: center;
+word-wrap: break-word;
 }
 .card i {
 font-size: 40px;

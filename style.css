@@ -57,6 +57,7 @@ body {
 .navbar {
 background-color: #647465;
 padding: 1rem 0;
+color: red;
 }
 
 .navbar-brand img {

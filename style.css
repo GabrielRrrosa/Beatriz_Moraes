@@ -19,7 +19,7 @@ header {
 
 /* Estilo do logo no header */
 .logo-img {
-  height: 95px; /* Altura do logo, ajustando-se à imagem enviada */
+  height: 100px; /* Altura do logo, ajustando-se à imagem enviada */
   width: auto; /* A largura será ajustada automaticamente para manter a proporção */
   margin-left: 30%;
   object-fit: contain;
@@ -27,7 +27,7 @@ header {
 
 /* Container do header para garantir a altura e o alinhamento vertical */
 .header-container {
-  height: 110px; /* Altura do header em resoluções maiores */
+  height: 80px; /* Altura do header em resoluções maiores */
 }
 
 /* Estilo para os links da navegação */
@@ -42,8 +42,9 @@ header {
 /* Estilo para o link ativo e hover */
 .nav-link.active,
 .nav-link:hover {
-  color: #fff; /* Cor do texto no hover e ativo */
+  color: #FFF; /* Cor do texto no hover e ativo */
 }
+
 
 /* Estilo para o botão do menu hamburger */
 .navbar-toggler {

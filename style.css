@@ -76,6 +76,8 @@ header {
   background: url('hero.png') no-repeat center center/cover;
   height: 100vh; /* Altura total da viewport */
   color: #eff0f0; /* Cor do texto padrão */
+  /* padding-top é uma correção para o header fixo */
+  padding-top: 110px;
 }
 
 /* Estilo do título */
@@ -110,9 +112,34 @@ header {
   border-color: #eff0f0;
 }
 
-/* Centralizando o conteúdo verticalmente */
-.hero-section {
-  padding-top: 110px; /* Offset para o header fixo */
+/* Estilos de transição para o main-content */
+.main-content {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Nova classe para empurrar o conteúdo para baixo */
+.pushed-down {
+  transform: translateY(220px); /* Altura do menu expandido + padding */
+}
+
+/* === MEDIA QUERY PARA TELAS MENORES === */
+@media (max-width: 991.98px) {
+  .hero-section {
+    background: url('hero-smaller.png') no-repeat center center/cover;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 3rem;
+  }
+}
+
+/* === MEDIA QUERY PARA TELAS MENORES === */
+@media (max-width: 768px) {
+  .hero-section {
+    background: url('hero-smaller.png') no-repeat center center/cover;
+    height: auto; /* Altura automática para se ajustar ao conteúdo em telas menores */
+    padding-top: 80px; /* Reduz o padding para o header menor */
+    padding-bottom: 3rem;
+  }
 }
 
 /* === ESTILOS PARA A SEÇÃO SOBRE MIM === */
@@ -120,15 +147,15 @@ header {
 @import url('https://fonts.googleapis.com/css2?family=Georgia&family=Roboto:wght@400&display=swap');
 
 .about-section {
-  background-color: #eff0f0; /* Cor de fundo da seção */
-  color: #647465; /* Cor do texto padrão */
+  background-color: #647465; /* Cor de fundo da seção */
+  color: #eff0f0; /* Cor do texto padrão */
 }
 
 /* Estilo do título */
 .about-title {
   font-family: 'Georgia', serif;
   font-weight: 700;
-  color: #647465; /* Cor do título */
+  color: #eff0f0; /* Cor do título */
 }
 
 /* Estilo do texto */
@@ -136,7 +163,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.8; /* Espaçamento entre linhas para melhor leitura */
-  color: #647465; /* Cor do texto */
+  color: #eff0f0; /* Cor do texto */
 }
 
 /* Estilo da imagem com borda arredondada e sombra */
@@ -263,6 +290,11 @@ height: 40px;
   color: #647465;
 }
 
+.py-5{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
 /* Título da seção */
 .benefits-title {
   font-family: 'Georgia', serif;
@@ -294,19 +326,19 @@ height: 40px;
 /* === ESTILOS PARA A SEÇÃO DE PÚBLICO-ALVO === */
 .target-audience-section {
   background-color: #647465; /* Fundo branco para contraste */
-  color: #647465;
+  color: #eff0f0;
 }
 
 .section-title {
   font-family: 'Georgia', serif;
   font-weight: 700;
-  color: #647465;
+  color: #eff0f0;
 }
 
 .section-subtitle {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  color: #647465;
+  color: #eff0f0;
 }
 
 .target-card {
@@ -383,13 +415,13 @@ height: 40px;
 
 /* === ESTILOS PARA A SEÇÃO DE DEPOIMENTOS === */
 .testimonials-section {
-  background-color: #fff; /* Fundo branco para destaque */
-  color: #647465;
+  background-color: #647465; /* Fundo branco para destaque */
+  color: #eff0f0;
 }
 
 .testimonials-section .section-title,
 .testimonials-section .section-subtitle {
-  color: #647465;
+  color: #eff0f0;
 }
 
 .testimonial-card {
@@ -403,7 +435,7 @@ height: 40px;
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border: 4px solid #647465;
+  border: 4px solid #eff0f0;
 }
 
 .testimonial-text {
@@ -412,13 +444,13 @@ height: 40px;
   font-size: 1.1rem;
   font-style: italic;
   line-height: 1.6;
-  color: #647465;
+  color: #eff0f0;
 }
 
 .testimonial-author {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  color: #647465;
+  color: #eff0f0;
   margin-top: 1rem;
 }
 

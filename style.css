@@ -6,6 +6,7 @@
 /* Importação da fonte Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+
 /* Estilos gerais do header e da barra de navegação */
 header {
   background-color: #647465; /* Cor de fundo do header */
@@ -60,12 +61,18 @@ header {
 @media (max-width: 991.98px) {
   .header-container {
     height:  auto; /* Altura automática em telas menores */
+    text-align: center;
+    padding: 25px;
   }
   .navbar-brand {
     padding: 0.5rem 0; /* Espaçamento padrão para o logo em telas menores */
   }
   .navbar-nav {
-    padding-left: 1rem; /* Alinha os itens do menu hamburger à esquerda */
+    padding-left: 5rem; /* Alinha os itens do menu hamburger à esquerda */
+  }
+
+  .nav-link{
+    padding: 15px;
   }
 }
 
@@ -77,8 +84,9 @@ header {
   background: url('hero.png') no-repeat center center/cover;
   height: 100vh; /* Altura total da viewport */
   color: #eff0f0; /* Cor do texto padrão */
-  /* padding-top é uma correção para o header fixo */
   padding-top: 110px;
+  display: flex;
+  align-items: center; /* Garante que o conteúdo fique centralizado verticalmente */
 }
 
 /* Estilo do título */
@@ -87,6 +95,7 @@ header {
   font-weight: 700;
   line-height: 1.2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra no texto */
+  font-size: 3.5rem; /* Tamanho base do título */
 }
 
 /* Estilo do subtítulo */
@@ -94,6 +103,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra no texto */
+  font-size: 1.5rem; /* Tamanho base do subtítulo */
 }
 
 /* Estilo do botão */
@@ -104,6 +114,7 @@ header {
   color: #eff0f0;
   padding: 0.75rem 2rem;
   transition: all 0.3s ease-in-out;
+  font-size: 1.1rem; /* Tamanho base do botão */
 }
 
 /* Efeito hover do botão */
@@ -113,33 +124,52 @@ header {
   border-color: #eff0f0;
 }
 
-/* Estilos de transição para o main-content */
-.main-content {
-  transition: transform 0.3s ease-in-out;
-}
+/* === MEDIA QUERIES PARA RESPONSIVIDADE DO HERO === */
 
-/* Nova classe para empurrar o conteúdo para baixo */
-.pushed-down {
-  transform: translateY(220px); /* Altura do menu expandido + padding */
-}
-
-/* === MEDIA QUERY PARA TELAS MENORES === */
-@media (max-width: 991.98px) {
-  .hero-section {
-    background: url('hero-smaller.png') no-repeat center center/cover;
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 3rem;
+/* Telas menores que 576px (extra-small) */
+@media (max-width: 575.98px) {
+  .hero-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 
-/* === MEDIA QUERY PARA TELAS MENORES === */
+/* Telas entre 576px e 767.98px (small) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+/* Telas entre 768px e 991.98px (medium) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+/* Telas menores (geral para a troca do background) */
 @media (max-width: 768px) {
   .hero-section {
-    background: url('hero-smaller.png') no-repeat center center/cover;
-    height: auto; /* Altura automática para se ajustar ao conteúdo em telas menores */
-    padding-top: 80px; /* Reduz o padding para o header menor */
+    background: url('hero.png') no-repeat right right/cover;
+    background-color: #647465;
+    height: auto;
+    padding-top: 80px;
     padding-bottom: 3rem;
+    align-items: flex-start; /* Alinha o conteúdo ao topo em telas menores */
   }
 }
 

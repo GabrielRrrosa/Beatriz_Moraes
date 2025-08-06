@@ -2,6 +2,10 @@
 /* Importação da fonte Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+/* === ESTILOS PARA O HEADER === */
+/* Importação da fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 /* Estilos gerais do header e da barra de navegação */
 header {
   background-color: #647465; /* Cor de fundo do header */
@@ -10,12 +14,14 @@ header {
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
+  margin-right: 12%;
 }
 
-/* Estilo para a imagem do logo */
+/* Estilo do logo no header */
 .logo-img {
   height: 95px; /* Altura do logo, ajustando-se à imagem enviada */
   width: auto; /* A largura será ajustada automaticamente para manter a proporção */
+  margin-left: 30%;
   object-fit: contain;
 }
 
@@ -29,6 +35,7 @@ header {
   color: #eff0f0; /* Cor do texto dos links */
   font-weight: 500;
   padding: 0 1rem; /* Adiciona espaçamento entre os links */
+  margin-right: 30x;
   transition: color 0.3s ease-in-out; /* Transição suave na cor */
 }
 
@@ -51,10 +58,13 @@ header {
 /* Media query para telas menores (colapsa o menu e alinha itens) */
 @media (max-width: 991.98px) {
   .header-container {
-    height: auto; /* Altura automática em telas menores */
+    height:  auto; /* Altura automática em telas menores */
   }
   .navbar-brand {
     padding: 0.5rem 0; /* Espaçamento padrão para o logo em telas menores */
+  }
+  .navbar-nav {
+    padding-left: 1rem; /* Alinha os itens do menu hamburger à esquerda */
   }
 }
 
@@ -222,4 +232,235 @@ header {
 
 .social-icons .social-icon:hover {
   color: #fff;
+}
+
+.whatsapp-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1000;
+width: 60px;
+height: 60px;
+background-color: #25D366;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-button img {
+width: 40px;
+height: 40px;
+}
+
+/* === ESTILOS PARA A SEÇÃO DE BENEFÍCIOS === */
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Georgia&family=Roboto:wght@400&display=swap');
+
+.benefits-section {
+  background-color: #eff0f0; /* Fundo branco para contraste com as outras seções */
+  color: #647465;
+}
+
+/* Título da seção */
+.benefits-title {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: #647465;
+}
+
+/* Estilo para a lista de benefícios */
+.benefits-list {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Estilo para cada item da lista */
+.benefits-item {
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+/* Estilo para o ícone de check */
+.benefits-item i {
+  color: #647465; /* Cor do ícone */
+  font-size: 1.5rem;
+}
+
+/* === ESTILOS PARA A SEÇÃO DE PÚBLICO-ALVO === */
+.target-audience-section {
+  background-color: #647465; /* Fundo branco para contraste */
+  color: #647465;
+}
+
+.section-title {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: #647465;
+}
+
+.section-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #647465;
+}
+
+.target-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.target-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: #647465;
+}
+
+.card-title {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: #647465;
+}
+
+.card-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #647465;
+}
+
+/* === ESTILOS PARA A SEÇÃO SOBRE A TCC === */
+.tcc-section {
+  background-color: #eff0f0; /* Fundo cinza claro */
+  color: #647465;
+}
+
+.tcc-section .section-title,
+.tcc-section .section-subtitle {
+  color: #647465;
+}
+
+.tcc-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tcc-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tcc-card .card-icon {
+  font-size: 3rem;
+  color: #647465;
+}
+
+.tcc-card .card-title {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: #647465;
+}
+
+.tcc-card .card-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #647465;
+}
+
+
+/* === ESTILOS PARA A SEÇÃO DE DEPOIMENTOS === */
+.testimonials-section {
+  background-color: #fff; /* Fundo branco para destaque */
+  color: #647465;
+}
+
+.testimonials-section .section-title,
+.testimonials-section .section-subtitle {
+  color: #647465;
+}
+
+.testimonial-card {
+  max-width: 700px; /* Limita a largura do card para melhor leitura */
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 4px solid #647465;
+}
+
+.testimonial-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: #647465;
+}
+
+.testimonial-author {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #647465;
+  margin-top: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #647465;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+/* === ESTILOS PARA A SEÇÃO FAQ === */
+.faq-section {
+  background-color: #eff0f0; /* Fundo cinza claro */
+  color: #647465;
+}
+
+.faq-section .section-title,
+.faq-section .section-subtitle {
+  color: #647465;
+}
+
+.accordion-item {
+  border: 1px solid #647465;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.accordion-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #647465;
+  background-color: transparent;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #647465;
+  background-color: #d1d9d1; /* Cor de fundo quando expandido */
+  box-shadow: none;
+}
+
+.accordion-body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #647465;
 }
